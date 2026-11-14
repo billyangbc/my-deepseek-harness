@@ -13,6 +13,7 @@
 | [research/s5a-upstream-ui.md](./research/s5a-upstream-ui.md) | 上游 UI 能力与 fork 定制的映射（文件/终端/浏览器/Markdown/LSP/侧栏扩展点） | UI 迁移与扩展点选择 |
 | [baseline/2026-11-14.md](./baseline/2026-11-14.md) | P0/P1 基线：归档引用、安装/构建/类型/测试结果与本机已知失败 | 基线与环境对照 |
 | [baseline/p2-2026-11-14.md](./baseline/p2-2026-11-14.md) | P2 插件 SDK PoC：G1/G2 结论、E2E 证据、安装/卸载验收 | 插件工程开工 |
+| [baseline/p3-2026-11-14.md](./baseline/p3-2026-11-14.md) | P3 Mermaid 插件：实现、真实浏览器渲染证据、包体与测试缺口 | 客户端插件复用 |
 
 ## 一句话结论
 
