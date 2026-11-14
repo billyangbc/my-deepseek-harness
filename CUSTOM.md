@@ -1,9 +1,11 @@
 # 相对官方的定制说明
 
+> 2026-11-14：基线与解耦改造方案见 [`docs/custom/`](docs/custom/README.md)（现状分析、改造方案、实施计划）。本文件继续记录产品行为；改造完成前，基线与差异数字以 [`docs/custom/01-现状分析.md`](docs/custom/01-现状分析.md) 为准。
+
 ## 基线
 - 上游仓库：https://github.com/deepseek-ai/deepseek-harness
 - 跟做基线分支：master（developer preview，会有破坏性变更）
-- **集成分支**：`custom/main`（本 fork 的功能集成线；相对 upstream `master` 约 +48 commits，截至 2026-08-22）
+- **集成分支**：`custom/main`（本 fork 的功能集成线；相对分叉点 `47f943859b` 约 +214 commits，截至 2026-09-05；上游已到 `0.2.2-rc.3`，升级方案见 `docs/custom/`）
 - 运行方式：从源码 `pnpm install` / `pnpm run build:lib:host` + client bundle + `pnpm run build:web` / `pnpm dsh web`
 - Node：^22.19 或 >=24；pnpm@11.7.0（Corepack）
 - 扩展策略：V1 文件编辑器因需改 Host RPC 与 **工具箱**（details 栏）壳层，**直接改 `packages/`**；长期仍优先树外插件 / 组合包，不改 `vendor/`
