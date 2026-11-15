@@ -57,6 +57,7 @@ dsh plugin --profile <profile> remove @nange/dsh-plugin-mermaid
 
 - 计划与实施记录：[`docs/custom/`](docs/custom/README.md)
 - 逐项审计：[`docs/custom/baseline/plan-audit-2026-11-14.md`](docs/custom/baseline/plan-audit-2026-11-14.md)
+- 未完成项归档：[`docs/custom/archive/unfinished-2026-11-15.md`](docs/custom/archive/unfinished-2026-11-15.md)
 - 零差异脚本：插件仓 `tooling/verify-zero-diff.mjs`；CI 为本地校验（远端 Actions 已关闭，workflow 仅手动触发）
 - UI E2E：Mermaid/Git、编辑器保存、文件操作、LSP、终端、Markdown 预览
 
