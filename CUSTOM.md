@@ -6,7 +6,7 @@
 
 - 上游仓库：<https://github.com/deepseek-ai/deepseek-harness>
 - 基线提交：`39163dd30f703a79079e2d2446545cff3c453738`（`0.2.2-rc.3`，`upstream/develop`）
-- 本 fork 分支：`custom/main`（= 基线 + 本文件与 `docs/custom/`）
+- 本 fork 主分支：`main`（= 基线 + 本文件与 `docs/custom/`）；`custom/main`、`refactor/main` 保留为同内容别名
 - 本 fork 远端：<https://github.com/billyangbc/my-deepseek-harness>（`refactor/main` 同步；旧线见 `legacy/custom-main-2026-11-14`）
 - 插件仓远端：<https://github.com/billyangbc/dsh-plugins>（tag `v0.2.2`）
 - 旧定制线：标签 `legacy/custom-main-2026-11-14`（只读留档，可回滚）
