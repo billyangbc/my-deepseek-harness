@@ -75,6 +75,14 @@
 5. **能力缺口**：Monaco/Add to Chat 依赖上游扩展点或客户端资产管线；桌面/浏览器验收依赖环境。
 6. **偶发加载顺序**：Mermaid 在干净 HOME 曾出现一次 slot 未声明告警，重试后渲染；未根因定位。
 
+## 3.1 建议执行结果（2026-11-14 晚）
+
+- 建议 1（P7 底座）：新增 `tooling/verify-zero-diff.mjs`、`.github/workflows/ci.yml`、插件 README 重写、`CUSTOM.md` 重写、插件仓 `v0.1.0` tag。
+- 建议 2（推送）：`custom/main` 已 force-with-lease 推送，`legacy/custom-main-2026-11-14` 已推送。
+- 建议 3（P4 收口）：多远程 push 与 README 完成；Graph/徽章/i18n 仍在待办。
+- 建议 4（P5 决策）：保留 CodeMirror，Monaco 延后，见 `p5-monaco-decision.md`。
+- 建议 5（P6 验收）：Web 浏览器 UI 已实测（overlay 启用 + example.com iframe）；桌面 `build` 通过（Electron v44.7.0），启动/安装未测。
+
 ## 4. 建议的下一步（按优先级）
 
 1. **P7-2/P7-4/P7-5 先行**：把零差异检查写成脚本并接入 CI；重写 `CUSTOM.md` 与插件 README；给插件仓打首个 tag。这些是交付可信度的底座。
