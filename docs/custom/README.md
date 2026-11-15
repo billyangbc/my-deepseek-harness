@@ -15,7 +15,8 @@
 | [baseline/p2-2026-11-14.md](./baseline/p2-2026-11-14.md) | P2 插件 SDK PoC：G1/G2 结论、E2E 证据、安装/卸载验收 | 插件工程开工 |
 | [baseline/p3-2026-11-14.md](./baseline/p3-2026-11-14.md) | P3 Mermaid 插件：实现、真实浏览器渲染证据、包体与测试缺口 | 客户端插件复用 |
 | [baseline/p4-2026-11-14.md](./baseline/p4-2026-11-14.md) | P4 Git 插件：核心操作、按块暂存、push、历史详情、硬约束、待办 | Git 插件续作 |
-| [baseline/p5-2026-11-14.md](./baseline/p5-2026-11-14.md) | P5 编辑器：写能力、CodeMirror 面板、stdio LSP（诊断/hover）、E2E、新约束、Monaco 偏差 | 编辑器续作 |
+| [baseline/p5-2026-11-14.md](./baseline/p5-2026-11-14.md) | P5 编辑器：写能力、CodeMirror 面板、文件操作/图片/守卫、stdio LSP（诊断/hover）、新约束 | 编辑器续作 |
+| [baseline/p6-2026-11-14.md](./baseline/p6-2026-11-14.md) | P6 切换：终端 E2E、官方浏览器/桌面行、cutover 清单、剩余验证 | 切换执行 |
 
 ## 一句话结论
 
