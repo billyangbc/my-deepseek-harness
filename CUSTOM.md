@@ -7,6 +7,8 @@
 - 上游仓库：<https://github.com/deepseek-ai/deepseek-harness>
 - 基线提交：`39163dd30f703a79079e2d2446545cff3c453738`（`0.2.2-rc.3`，`upstream/develop`）
 - 本 fork 分支：`custom/main`（= 基线 + 本文件与 `docs/custom/`）
+- 本 fork 远端：<https://github.com/billyangbc/my-deepseek-harness>（`refactor/main` 同步；旧线见 `legacy/custom-main-2026-11-14`）
+- 插件仓远端：<https://github.com/billyangbc/dsh-plugins>（tag `v0.2.2`）
 - 旧定制线：标签 `legacy/custom-main-2026-11-14`（只读留档，可回滚）
 - 零差异范围：`packages/`、`apps/`、`vendor/`、`package.json`、`pnpm-lock.yaml`、`pnpm-workspace.yaml`、`tsconfig*.json`
 
@@ -55,7 +57,7 @@ dsh plugin --profile <profile> remove @nange/dsh-plugin-mermaid
 
 - 计划与实施记录：[`docs/custom/`](docs/custom/README.md)
 - 逐项审计：[`docs/custom/baseline/plan-audit-2026-11-14.md`](docs/custom/baseline/plan-audit-2026-11-14.md)
-- 零差异脚本：插件仓 `tooling/verify-zero-diff.mjs`；CI 在每次推送时执行
+- 零差异脚本：插件仓 `tooling/verify-zero-diff.mjs`；CI 为本地校验（远端 Actions 已关闭，workflow 仅手动触发）
 - UI E2E：Mermaid/Git、编辑器保存、文件操作、LSP、终端、Markdown 预览
 
 ## 已知限制
