@@ -18,7 +18,7 @@
 |---|---|---|
 | Mermaid 聊天图表 | `@nange/dsh-plugin-mermaid` | 围栏渲染、缩放进/平移 lightbox、主题跟随 |
 | Git 面板 | `@nange/dsh-plugin-git` | 状态、diff、按块 stage/unstage/discard、提交、push/ahead、历史与提交详情 |
-| 编辑器 | `@nange/dsh-plugin-editor` | 文件树与新建/重命名/删除、CodeMirror 编辑、图片与 Markdown 预览、2 MB 守卫 |
+| 编辑器 | `@nange/dsh-plugin-editor` | 文件树（含 Git 状态标记）与新建/重命名/删除、CodeMirror 编辑、图片与 Markdown 预览、2 MB 守卫、发送到对话 |
 | LSP | 同上 | clangd 诊断、hover、F12 定义跳转、补全 |
 
 能力到插件的分层：`dsh-<cap>` 定义 → `dsh-<cap>-local` provider → `dsh-api-<cap>` Remote → `dsh-client-ui-*` 面板 → `dsh-plugin-*` bundle。
@@ -65,4 +65,4 @@ dsh plugin --profile <profile> remove @nange/dsh-plugin-mermaid
 - 构建期需要匹配的 DSH checkout（Typert 生成 G1 降级方案）；运行时安装是树外。
 - 客户端构建仍是单 JS bundle，暂不支持 CSS Modules/worker/资产；因此编辑器用 CodeMirror 而非 Monaco。
 - Mermaid 全量内联（约 7.3 MB），Git 历史为线性列表，编辑器上限 2 MB。
-- Add to Chat 暂缓：上游没有公开的 composer 插入服务。
+- 「发送到对话」使用现有 `ctx.conversation.send`，是立即发送；把选区预填进 composer 仍需上游插入 API。

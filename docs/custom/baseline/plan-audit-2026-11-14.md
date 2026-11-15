@@ -79,9 +79,9 @@
 
 - 建议 1（P7 底座）：新增 `tooling/verify-zero-diff.mjs`、`.github/workflows/ci.yml`、插件 README 重写、`CUSTOM.md` 重写、插件仓 `v0.1.0` tag；零差异脚本已本地验证（对基线 pass、对旧线 fail）。
 - 建议 2（推送）：**已推送到 `billyangbc`**。基座 `billyangbc/my-deepseek-harness`（`custom/main`、`refactor/main`、archive 分支与 tag）与插件仓 `billyangbc/dsh-plugins`（`main`、`v0.1.0`–`v0.2.2`）均已推送；`NanGePlus` 远端仍无权限。两个 `billyangbc` 仓库的 Actions 已关闭，CI 仅本地执行。
-- 建议 3（P4 收口）：多远程 push、ASCII 拓扑图、README、卸载矩阵、Git 面板 zh/en 文案完成；徽章、编辑器 i18n、组件测试、性能仍在待办。
+- 建议 3（P4 收口）：多远程 push、ASCII 拓扑图、README、卸载矩阵、Git/编辑器 zh/en 文案、编辑器文件列表 Git 状态标记、5k 性能基线完成；上游文件树徽章与组件测试仍待办。
 - 建议 4（P5 决策）：保留 CodeMirror，Monaco 延后，见 `p5-monaco-decision.md`。
-- 建议 5（P6 验收）：Web 浏览器 UI 已实测（overlay 启用 + example.com iframe）；桌面 `build` 通过（Electron v44.7.0），启动/安装未测。
+- 建议 5（P6 验收）：Web 浏览器 UI 已实测（overlay 启用 + example.com iframe）；桌面 **unsigned** 包已构建、启动并打印 Host URL，DMG 可挂载；Agent 浏览器补了 preset 文档，完整工具回归未做。
 - P7 增量：`uninstall-audit.mjs` 全矩阵通过（3 bundle 单独 + 组合，行/manifest 干净，仅 `link:` 符号链接残留）；插件仓 tag `v0.1.0`、`v0.2.0`；基座 tag `custom-v0.1.0`。
 
 ## 4. 建议的下一步（按优先级）
