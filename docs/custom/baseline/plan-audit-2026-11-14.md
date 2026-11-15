@@ -77,8 +77,8 @@
 
 ## 3.1 建议执行结果（2026-11-14 晚）
 
-- 建议 1（P7 底座）：新增 `tooling/verify-zero-diff.mjs`、`.github/workflows/ci.yml`、插件 README 重写、`CUSTOM.md` 重写、插件仓 `v0.1.0` tag。
-- 建议 2（推送）：`custom/main` 已 force-with-lease 推送，`legacy/custom-main-2026-11-14` 已推送。
+- 建议 1（P7 底座）：新增 `tooling/verify-zero-diff.mjs`、`.github/workflows/ci.yml`、插件 README 重写、`CUSTOM.md` 重写、插件仓 `v0.1.0` tag；零差异脚本已本地验证（对基线 pass、对旧线 fail）。
+- 建议 2（推送）：**受阻**。`gh`/SSH 身份均为 `billyangbc`，对 `NanGePlus/my-deepseek-harness` 推送返回 403；`refactor/main`、`legacy/custom-main-2026-11-14`、`cutover/p6` 已在本地就绪，等待仓库写权限或切换到有权限的身份后再推。
 - 建议 3（P4 收口）：多远程 push 与 README 完成；Graph/徽章/i18n 仍在待办。
 - 建议 4（P5 决策）：保留 CodeMirror，Monaco 延后，见 `p5-monaco-decision.md`。
 - 建议 5（P6 验收）：Web 浏览器 UI 已实测（overlay 启用 + example.com iframe）；桌面 `build` 通过（Electron v44.7.0），启动/安装未测。
