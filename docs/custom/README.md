@@ -17,6 +17,7 @@
 | [baseline/p4-2026-11-14.md](./baseline/p4-2026-11-14.md) | P4 Git 插件：核心操作、按块暂存、push、历史详情、硬约束、待办 | Git 插件续作 |
 | [baseline/p5-2026-11-14.md](./baseline/p5-2026-11-14.md) | P5 编辑器：写能力、CodeMirror 面板、文件操作/图片/守卫、stdio LSP（诊断/hover）、新约束 | 编辑器续作 |
 | [baseline/p6-2026-11-14.md](./baseline/p6-2026-11-14.md) | P6 切换：已执行 cutover、干净安装与门禁/E2E、剩余桌面与推送 | 切换验收 |
+| [baseline/plan-audit-2026-11-14.md](./baseline/plan-audit-2026-11-14.md) | 计划实施审计：P0–P7 逐项状态、完成度、风险与下一步 | 交付收尾 |
 
 ## 一句话结论
 
